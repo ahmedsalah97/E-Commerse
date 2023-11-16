@@ -25,7 +25,7 @@ import Register from './components/Register/Register';
 
 
 
-let Routers = createBrowserRouter([
+let Routers = createHashRouter([
   {path:"/", element:<Layout/> , children:[
     {path:"home", element:<Protctedroute> <Home /></Protctedroute>},
     {index:true, element:<Register/>},
